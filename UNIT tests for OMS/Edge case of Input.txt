@@ -1,0 +1,10 @@
+public void testCalculateTotalPrice_emptyList() {
+  List<Item> items = new ArrayList<>();
+  
+  Order order = new Order(items);
+  
+  double expectedTotal = 0.0;
+  double actualTotal = order.calculateTotalPrice();
+  
+  assertEquals(expectedTotal, actualTotal, 0.001);
+}

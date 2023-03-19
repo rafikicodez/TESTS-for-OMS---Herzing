@@ -1,0 +1,16 @@
+public void testCalculateTotalPrice_basic() {
+  List<Item> items = new ArrayList<>();
+  items.add(new Item("Shirt", 25.0));
+  items.add(new Item("Pants", 35.0));
+  items.add(new Item("Shoes", 50.0));
+  
+  Order order = new Order(items);
+  
+  double expectedTotal = 110.0;
+  double actualTotal = order.calculateTotalPrice();
+  
+  assertEquals(expectedTotal, actualTotal, 0.001);
+}
+
+
+// Instead of clothes, use Food items or "products" you already have.
