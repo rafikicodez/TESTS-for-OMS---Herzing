@@ -1,8 +1,8 @@
 public void testCalculateTotalPrice_basic() {
   List<Item> items = new ArrayList<>();
-  items.add(new Item("Shirt", 25.0));
-  items.add(new Item("Pants", 35.0));
-  items.add(new Item("Shoes", 50.0));
+  items.add(new Item("Chicken", 25.0));
+  items.add(new Item("Fish", 35.0));
+  items.add(new Item("Steak", 50.0));
   
   Order order = new Order(items);
   
