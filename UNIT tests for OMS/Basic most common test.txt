@@ -11,6 +11,3 @@ public void testCalculateTotalPrice_basic() {
   
   assertEquals(expectedTotal, actualTotal, 0.001);
 }
-
-
-// Instead of clothes, use Food items or "products" you already have.
